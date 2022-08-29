@@ -487,15 +487,20 @@ p.tit {
     border-radius: 10px;
 }
 div.video{
-	display: flex;
+    display: flex;
 	align-items: center;
-	justify-content: space-evenly;
     width: 100%;
-    background: black;
     text-align: center;
+    margin-bottom: 70px;
+    justify-content: space-evenly;
+}
+
+.video-cont{
+    flex-basis: 50%;
 }
 .video video{
     height: 438px;
+    width: 500px;
 }
 h1.inner-title {
 	text-align: center;
@@ -659,6 +664,19 @@ h5.main-title {
     .media-object {
         margin-top: 0;
     }
+    
+    div.video{
+    flex-direction: row;
+}
+    
+    .video-cont{
+    flex-basis: 100%;
+    }
+    
+    .video video{
+    height: 438px;
+    width: 100%;
+}
 }
 
 

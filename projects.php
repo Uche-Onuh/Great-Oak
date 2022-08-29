@@ -70,35 +70,35 @@ $data = DB::getInstance()->query("SELECT * FROM projects WHERE pdate < ? ORDER B
 		<!--Gallery-->
 	<section class="gallery py-md-2">
 		<div class="container py-2 mt-2">
-			<h3 class="tittle text-center mb-1">Projects</h3>
+		<h3 class="tittle text-center mb-1">Projects</h3>
 			<p class="tit text-center mx-auto">Over the years, our firm has grown tremendously from increased demand of our expertise. Some of our recent projects are highlighted below.</p>
 			<div class="video">
-				<div>
+			    <div class="video-cont">
 					<video src="images/fishcutter.mp4" class="" title="Fish cutter" controls=""></video>
 					<p class="py-2" style="text-align: center; color: black;">Stainless fish/chicken cutting machine</p>
 				</div>
-				<div>
-					<video src="images/fishcutter.mp4" class="" title="Fish cutter" controls=""></video>
-					<p class="py-2" style="text-align: center; color: black;">Stainless fish/chicken cutting machine</p>
+				<div class="video-cont">
+					<video src="images/pounder.mp4" class="" title="Yam pounder" controls=""></video>
+					<p class="py-2" style="text-align: center; color: black;">Machine for pounding of yam</p>
 				</div>
 			</div>
-			
-			<!-- <div class="row agile_gallery_grids demo pt-4 mt-md-3">
-				<?php if ($data->count()) {
-					$results = $data->results();
-					foreach ($results as $key) { echo '
-						<div class="col-sm-4">
-							<div class="gallery-grid1">
-								<img src="images/'.$key->banner.'" alt=" " class="img-responsive" />
-								<div class="p-desc">
-									<h3>'.$key->title.'</h3>
-									<p>'.$key->description.'</p>
-								</div>
+			<!--<p class="py-2" style="text-align: center; color: black;">Stainless fish/chicken cutting machine</p>-->
+			<div class="row agile_gallery_grids demo pt-4 mt-md-3">
+			<?php if ($data->count()) {
+				$results = $data->results();
+				foreach ($results as $key) { echo '
+					<div class="col-sm-4">
+						<div class="gallery-grid1">
+							<img src="images/'.$key->banner.'" alt=" " class="img-responsive" />
+							<div class="p-desc">
+								<h3>'.$key->title.'</h3>
+								<p>'.$key->description.'</p>
 							</div>
-						</div>';}
-					}
-				?>
-			</div> -->
+						</div>
+					</div>';}
+			}
+			?>
+			</div>
 		</div>
 	</section>
 	<!--//Gallery-->
@@ -113,8 +113,12 @@ $data = DB::getInstance()->query("SELECT * FROM projects WHERE pdate < ? ORDER B
 					<h3>Get in touch</h3>
 					<p>69, Obafemi Awolowo Way, Ikeja, </p>
 					<p class="my-2"> Lagos, Nigeria</p>
-					<p class="phone">Phone: +234 701 311 3129</p>
-					<p class="phone my-2">Tel: +234 803 846 2052</p>
+				<p class="phone">
+					    <a href="tel:08038462052">Phone: +234 803 846 2052</a>
+					</p>
+					<p class="phone my-2">
+					    <a href="tel:07068499885">Tel: +234 706 849 9885</a>
+					 </p>
 					<p class="phone">Mail:
 						<a href="mailto:info@greatoak.com.ng">info@greatoak.com.ng</a>
 					</p>
@@ -122,24 +126,24 @@ $data = DB::getInstance()->query("SELECT * FROM projects WHERE pdate < ? ORDER B
 				<div class="col-lg-6 footer-grids">
 					<h2>Latest Works</h2>
 					<div class="d-flex justify-content-around">
-						<a href="projects.html" class="col-4">
+						<a href="projects.php" class="col-4">
 							<img src="images/g3.jpg" class="img-fluid" alt="Responsive image">
 						</a>
-						<a href="projects.html" class="col-4">
+						<a href="projects.php" class="col-4">
 							<img src="images/g2.jpg" class="img-fluid" alt="Responsive image">
 						</a>
-						<a href="projects.html" class="col-4">
+						<a href="projects.php" class="col-4">
 							<img src="images/g1.jpg" class="img-fluid" alt="Responsive image">
 						</a>
 					</div>
 					<div class="d-flex justify-content-around">
-						<a href="projects.html" class="col-4">
+						<a href="projects.php" class="col-4">
 							<img src="images/g2.jpg" class="img-fluid" alt="Responsive image">
 						</a>
-						<a href="projects.html" class="col-4">
+						<a href="projects.php" class="col-4">
 							<img src="images/g1.jpg" class="img-fluid" alt="Responsive image">
 						</a>
-						<a href="projects.html" class="col-4">
+						<a href="projects.php" class="col-4">
 							<img src="images/g3.jpg" class="img-fluid" alt="Responsive image">
 						</a>
 					</div>
